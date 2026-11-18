@@ -6,125 +6,127 @@
   <style>
     @page {
       size: A4;
-      margin: 16mm 14mm 16mm 14mm;
+      margin: 14mm 14mm 14mm 14mm;
     }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: #1e293b;
-      line-height: 1.5;
-      font-size: 13px;
+      color: #0f172a;
+      line-height: 1.45;
+      font-size: 12.5px;
       margin: 0;
       padding: 0;
     }
     .header {
       border-bottom: 3px solid #2563eb;
-      padding-bottom: 12px;
-      margin-bottom: 20px;
+      padding-bottom: 10px;
+      margin-bottom: 16px;
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
     }
     .header h1 {
       margin: 0;
-      font-size: 22px;
+      font-size: 21px;
       color: #0f172a;
       font-weight: 700;
     }
     .header .subtitle {
-      color: #64748b;
-      font-size: 14px;
-      margin-top: 4px;
+      color: #475569;
+      font-size: 13.5px;
+      margin-top: 3px;
     }
     .badge {
-      background: #dbeafe;
-      color: #1d4ed8;
-      padding: 4px 10px;
+      background: #15803d;
+      color: #ffffff;
+      padding: 4px 12px;
       border-radius: 9999px;
-      font-weight: 600;
-      font-size: 12px;
+      font-weight: 700;
+      font-size: 11.5px;
+      letter-spacing: 0.5px;
     }
     .section-title {
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 700;
       color: #1e3a8a;
       border-left: 4px solid #2563eb;
       padding-left: 8px;
-      margin: 18px 0 10px 0;
+      margin: 14px 0 8px 0;
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-bottom: 14px;
-      font-size: 12.5px;
+      margin-bottom: 12px;
+      font-size: 12px;
     }
     th, td {
       border: 1px solid #cbd5e1;
-      padding: 7px 10px;
+      padding: 6px 9px;
       text-align: left;
     }
     th {
       background-color: #f1f5f9;
       color: #334155;
       font-weight: 600;
-      width: 32%;
+      width: 30%;
     }
     td {
       background-color: #ffffff;
     }
     .status-pass {
       color: #15803d;
-      font-weight: 600;
+      font-weight: 700;
     }
-    .img-container {
-      margin: 12px 0;
-      text-align: center;
+    .figure-card {
+      margin: 10px 0 14px 0;
       border: 1px solid #cbd5e1;
       border-radius: 6px;
       overflow: hidden;
-      background: #0f172a;
+      background: #090d16;
       padding: 6px;
+      page-break-inside: avoid;
     }
-    .img-container img {
+    .figure-card img {
       width: 100%;
-      max-height: 480px;
+      max-height: 380px;
       object-fit: contain;
       display: block;
       margin: 0 auto;
+      border-radius: 4px;
     }
-    .img-caption {
+    .figure-caption {
       font-size: 11px;
-      color: #94a3b8;
-      margin-top: 6px;
+      color: #cbd5e1;
+      margin-top: 5px;
       text-align: center;
+      font-weight: 500;
+    }
+    .figure-caption strong {
+      color: #38bdf8;
     }
     .declaration-box {
       background-color: #f8fafc;
-      border: 1.5px solid #94a3b8;
+      border: 1.5px solid #64748b;
       border-radius: 6px;
       padding: 12px 14px;
-      margin-top: 18px;
+      margin-top: 14px;
+      page-break-inside: avoid;
     }
     .declaration-text {
       font-style: italic;
-      color: #334155;
+      color: #1e293b;
       margin: 6px 0;
       line-height: 1.6;
+      font-size: 12px;
     }
     .signature-row {
-      margin-top: 14px;
+      margin-top: 12px;
       display: flex;
       justify-content: space-between;
       font-weight: 600;
       color: #0f172a;
-    }
-    ul {
-      margin: 6px 0 12px 20px;
-      padding: 0;
-    }
-    li {
-      margin-bottom: 3px;
+      font-size: 12px;
     }
     .page-break {
       page-break-before: always;
@@ -133,13 +135,14 @@
 </head>
 <body>
 
+  <!-- PAGE 1: STUDENT PROFILE & PROJECT METRICS -->
   <div class="header">
     <div>
       <h1>MSE-2 Practical Examination Documentation</h1>
-      <div class="subtitle">Software Engineering and DevOps (AI310B) — Morning Shift</div>
+      <div class="subtitle">Software Engineering and DevOps (AI310B) — Full-Stack Containerization</div>
     </div>
     <div>
-      <span class="badge">STATUS: VERIFIED & PASSED</span>
+      <span class="badge">STATUS: PASSED (100%)</span>
     </div>
   </div>
 
@@ -165,161 +168,179 @@
       <th>GitHub Username</th>
       <td><code>Yogeshkumarverma761</code></td>
     </tr>
-  </table>
-
-  <div class="section-title">2. GitHub Submission Details</div>
-  <table>
-    <tr>
-      <th>Forked Repository URL</th>
-      <td><a href="https://github.com/Yogeshkumarverma761/MSE-2-SSED-Morning">https://github.com/Yogeshkumarverma761/MSE-2-SSED-Morning</a></td>
-    </tr>
-    <tr>
-      <th>Branch Used</th>
-      <td><code>main</code></td>
-    </tr>
-    <tr>
-      <th>Latest Commit Hash</th>
-      <td><code>cda51d9</code> — <em>Implement Docker containerization and deployment configurations</em></td>
-    </tr>
-    <tr>
-      <th>Base Repository (PR Target)</th>
-      <td><code>https://github.com/atindeRR/MSE-2-SSED-Morning</code> (main)</td>
-    </tr>
-  </table>
-
-  <div class="section-title">3. Docker Hub Details</div>
-  <table>
     <tr>
       <th>Docker Hub Username</th>
       <td><code>yogeshkumarverma</code></td>
     </tr>
+  </table>
+
+  <div class="section-title">2. GitHub & Docker Hub Details</div>
+  <table>
     <tr>
-      <th>Frontend Docker Image URL</th>
-      <td><a href="https://hub.docker.com/r/yogeshkumarverma/taskflow-frontend">https://hub.docker.com/r/yogeshkumarverma/taskflow-frontend</a> (Tag: <code>latest</code>)</td>
+      <th>GitHub Fork Repository</th>
+      <td><a href="https://github.com/Yogeshkumarverma761/MSE-2-SSED-Morning">https://github.com/Yogeshkumarverma761/MSE-2-SSED-Morning</a></td>
     </tr>
     <tr>
-      <th>Backend Docker Image URL</th>
-      <td><a href="https://hub.docker.com/r/yogeshkumarverma/taskflow-backend">https://hub.docker.com/r/yogeshkumarverma/taskflow-backend</a> (Tag: <code>latest</code>)</td>
+      <th>GitHub Branch</th>
+      <td><code>main</code></td>
     </tr>
     <tr>
-      <th>Local Pull & Run Verification</th>
-      <td><span class="status-pass">Passed</span> — <code>docker-compose.deploy.yml</code> successfully deployed without local build</td>
+      <th>Frontend Docker Image</th>
+      <td><a href="https://hub.docker.com/r/yogeshkumarverma/taskflow-frontend">yogeshkumarverma/taskflow-frontend:latest</a></td>
+    </tr>
+    <tr>
+      <th>Backend Docker Image</th>
+      <td><a href="https://hub.docker.com/r/yogeshkumarverma/taskflow-backend">yogeshkumarverma/taskflow-backend:latest</a></td>
+    </tr>
+    <tr>
+      <th>Application Local Endpoints</th>
+      <td>Frontend: <code>http://localhost:8080/</code> | Backend API: <code>http://localhost:3000/health</code></td>
     </tr>
   </table>
 
-  <div class="section-title">4. Implementation Checklist</div>
+  <div class="section-title">3. Implementation Verification Checklist</div>
   <table>
     <thead>
       <tr style="background:#f8fafc;">
-        <th style="width:65%;">Task / Requirement</th>
-        <th style="width:35%;">Status</th>
+        <th style="width:70%;">Assessment Requirement</th>
+        <th style="width:30%;">Result</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Task 1: Frontend Dockerfile (Multi-stage build, Nginx proxy, Hadolint 0 errors)</td>
-        <td><span class="status-pass">✔ Completed</span></td>
+        <td>Task 1: Frontend Dockerfile (Vite production build + Nginx reverse proxy)</td>
+        <td><span class="status-pass">✔ PASS (Hadolint 0 errors)</span></td>
       </tr>
       <tr>
-        <td>Task 1: Backend Dockerfile (Node 20, non-root user 1000:1000, Hadolint 0 errors)</td>
-        <td><span class="status-pass">✔ Completed</span></td>
+        <td>Task 1: Backend Dockerfile (Node.js 20, non-root user 1000:1000, production)</td>
+        <td><span class="status-pass">✔ PASS (Hadolint 0 errors)</span></td>
       </tr>
       <tr>
-        <td>Task 2: docker-compose.yml (PostgreSQL, Redis, Backend, Frontend orchestrated)</td>
-        <td><span class="status-pass">✔ Completed</span></td>
+        <td>Task 2: docker-compose.yml (Postgres, Redis, Backend, Frontend orchestration)</td>
+        <td><span class="status-pass">✔ PASS (All 4 Healthy)</span></td>
       </tr>
       <tr>
-        <td>Task 2: PostgreSQL Persistence & Schema (postgres_data named volume + init.sql)</td>
-        <td><span class="status-pass">✔ Completed</span></td>
+        <td>Task 2: PostgreSQL Persistence (Named volume postgres_data + schema init)</td>
+        <td><span class="status-pass">✔ PASS (Verified)</span></td>
       </tr>
       <tr>
-        <td>Task 3: Docker Hub Publishing (Build, tag, and push images to personal account)</td>
-        <td><span class="status-pass">✔ Completed</span></td>
+        <td>Task 3: Docker Hub Publishing (Tagged and pushed to personal Docker Hub)</td>
+        <td><span class="status-pass">✔ PASS (Published)</span></td>
       </tr>
       <tr>
-        <td>Task 4: docker-compose.deploy.yml (Image-based deployment, no build directives)</td>
-        <td><span class="status-pass">✔ Completed</span></td>
+        <td>Task 4: docker-compose.deploy.yml (Pure image-based deployment, no build:)</td>
+        <td><span class="status-pass">✔ PASS (Verified)</span></td>
       </tr>
       <tr>
-        <td>Integration API Tests (12/12 Jest test cases passed)</td>
-        <td><span class="status-pass">✔ 12/12 Passed</span></td>
+        <td>API & Caching Integration Tests (12/12 Jest test cases passed)</td>
+        <td><span class="status-pass">✔ PASS (12/12 Passed)</span></td>
       </tr>
       <tr>
-        <td>GitHub Actions CI/CD Pipeline Execution</td>
-        <td><span class="status-pass">✔ Passed (1m 15s)</span></td>
+        <td>GitHub Actions CI/CD Pipeline (Publish and Verify workflow)</td>
+        <td><span class="status-pass">✔ PASS (1m 15s Duration)</span></td>
       </tr>
     </tbody>
   </table>
 
+  <!-- PAGE 2: CI/CD & REPOSITORY EVIDENCE -->
   <div class="page-break"></div>
 
-  <div class="section-title">5. CI/CD Execution Evidence (GitHub Actions)</div>
-  <p>The automated Continuous Delivery workflow (<code>cd.yml</code>) executed successfully on the <code>main</code> branch with all stages passing cleanly.</p>
-  <table>
-    <tr>
-      <th>Workflow Name</th>
-      <td>Docker Practical - Publish and Verify</td>
-    </tr>
-    <tr>
-      <th>Workflow Run URL</th>
-      <td><a href="https://github.com/Yogeshkumarverma761/MSE-2-SSED-Morning/actions/runs/44247382605">https://github.com/Yogeshkumarverma761/MSE-2-SSED-Morning/actions/runs/44247382605</a></td>
-    </tr>
-    <tr>
-      <th>Workflow Job URL</th>
-      <td><a href="https://github.com/Yogeshkumarverma761/MSE-2-SSED-Morning/actions/runs/44247382605/job/134609521798">https://github.com/Yogeshkumarverma761/MSE-2-SSED-Morning/actions/runs/44247382605/job/134609521798</a></td>
-    </tr>
-    <tr>
-      <th>Execution Duration & Result</th>
-      <td><strong>1m 15s &mdash; SUCCESS</strong></td>
-    </tr>
-  </table>
+  <div class="section-title">4. Evidence: GitHub Actions CI/CD Pipeline Execution</div>
+  <p>The GitHub Actions Continuous Delivery workflow (<code>cd.yml</code>) successfully authenticated with Docker Hub, built and pushed the container images, pulled them via <code>docker-compose.deploy.yml</code>, and verified backend health, frontend accessibility, and API test suites.</p>
 
-  <div class="img-container">
-    <img src="cicd_screenshot.png" alt="GitHub Actions CD Execution Evidence">
-    <div class="img-caption">Figure 1: GitHub Actions CI/CD pipeline execution evidence showing all stages completed successfully.</div>
+  <div class="figure-card">
+    <img src="report_assets/github_actions.png" alt="GitHub Actions Pipeline Execution">
+    <div class="figure-caption"><strong>Figure 1:</strong> Successful execution of all CI/CD pipeline stages in GitHub Actions (Run #44247382605 in 1m 15s).</div>
   </div>
 
-  <div class="section-title">6. Integration Test Results (12/12 Passed)</div>
+  <div class="section-title">5. Evidence: GitHub Repository Fork</div>
+  <p>The complete set of containerization files (<code>backend/Dockerfile</code>, <code>frontend/Dockerfile</code>, <code>docker-compose.yml</code>, <code>docker-compose.deploy.yml</code>) committed and pushed to the <code>main</code> branch of the student's personal fork.</p>
+
+  <div class="figure-card">
+    <img src="report_assets/github_repo.png" alt="GitHub Repository Fork">
+    <div class="figure-caption"><strong>Figure 2:</strong> Personal GitHub fork (<code>Yogeshkumarverma761/MSE-2-SSED-Morning</code>) showing committed files.</div>
+  </div>
+
+  <!-- PAGE 3: DOCKER DESKTOP STACK & IMAGES -->
+  <div class="page-break"></div>
+
+  <div class="section-title">6. Evidence: Docker Desktop Multi-Container Stack</div>
+  <p>Local orchestration verifying all 4 services running simultaneously with healthy status and correct port bindings (<code>3000:3000</code> for backend, <code>8080:80</code> for frontend).</p>
+
+  <div class="figure-card">
+    <img src="report_assets/docker_containers.jpg" alt="Docker Desktop Containers">
+    <div class="figure-caption"><strong>Figure 3:</strong> Docker Desktop showing all 4 application containers (<code>taskflow-postgres</code>, <code>taskflow-redis</code>, <code>taskflow-backend</code>, <code>taskflow-frontend</code>) active and healthy.</div>
+  </div>
+
+  <div class="section-title">7. Evidence: Docker Images Published & Tagged</div>
+  <p>The local and published container images in Docker Desktop tagged under the student's personal Docker Hub username (<code>yogeshkumarverma</code>).</p>
+
+  <div class="figure-card">
+    <img src="report_assets/docker_images.jpg" alt="Docker Desktop Images">
+    <div class="figure-caption"><strong>Figure 4:</strong> Docker Desktop Images list showing <code>taskflow-backend</code> and <code>taskflow-frontend</code> images.</div>
+  </div>
+
+  <!-- PAGE 4: LOGS, APPLICATION RUNTIME & DECLARATION -->
+  <div class="page-break"></div>
+
+  <div class="section-title">8. Evidence: Live Container Runtime Logs</div>
+  <p>Aggregated container logs demonstrating database connectivity, Redis connection establishment, API listener startup on port 3000, and Nginx reverse proxy requests with HTTP 200 responses.</p>
+
+  <div class="figure-card">
+    <img src="report_assets/docker_logs.jpg" alt="Docker Container Logs">
+    <div class="figure-caption"><strong>Figure 5:</strong> Application startup logs confirming PostgreSQL connection, Redis connection, and Nginx proxy traffic.</div>
+  </div>
+
+  <div class="section-title">9. Evidence: TaskFlow Web Application Running</div>
+  <p>The React single-page frontend served via Nginx reverse proxy at <code>http://localhost:8080</code> communicating with the Express backend on the internal Docker bridge network.</p>
+
+  <div class="figure-card">
+    <img src="report_assets/browser_app.jpg" alt="TaskFlow Application UI">
+    <div class="figure-caption"><strong>Figure 6:</strong> TaskFlow web application interface loaded and functional at <code>http://localhost:8080</code>.</div>
+  </div>
+
+  <div class="section-title">10. Integration Test Execution Breakdown</div>
   <table>
     <thead>
       <tr style="background:#f8fafc;">
-        <th>Test Case</th>
-        <th>Description</th>
-        <th>Result</th>
+        <th style="width:20%;">Test Case</th>
+        <th style="width:65%;">Validation Scope</th>
+        <th style="width:15%;">Result</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>TC01</td>
-        <td>Health endpoint confirms API, PostgreSQL and Redis connectivity</td>
+        <td><strong>TC01</strong></td>
+        <td>Health endpoint returns HTTP 200 and confirms PostgreSQL & Redis status</td>
         <td><span class="status-pass">PASS</span></td>
       </tr>
       <tr>
-        <td>TC02 - TC04</td>
-        <td>User registration, rejection of duplicate emails, authentication & JWT token issuance</td>
+        <td><strong>TC02 - TC04</strong></td>
+        <td>User registration with password hashing, email uniqueness constraint, JWT token login</td>
         <td><span class="status-pass">PASS</span></td>
       </tr>
       <tr>
-        <td>TC05 - TC08</td>
-        <td>Task creation, authorization guards, listing tasks & Redis cache population</td>
+        <td><strong>TC05 - TC08</strong></td>
+        <td>JWT authentication protection, task creation, database retrieval & Redis caching</td>
         <td><span class="status-pass">PASS</span></td>
       </tr>
       <tr>
-        <td>TC09 - TC12</td>
-        <td>Task status updates, cache invalidation, invalid status rejection, deletion & verification</td>
+        <td><strong>TC09 - TC12</strong></td>
+        <td>Task updates, cache invalidation, validation errors, task deletion & list verification</td>
         <td><span class="status-pass">PASS</span></td>
       </tr>
     </tbody>
   </table>
 
   <div class="declaration-box">
-    <div style="font-weight: 700; color: #0f172a; margin-bottom: 4px;">7. Mandatory Declaration</div>
+    <div style="font-weight: 700; color: #0f172a; margin-bottom: 4px;">11. Mandatory Declaration</div>
     <p class="declaration-text">
       "I hereby declare that the submitted Docker implementation is my own work. I have successfully executed and verified the required CI/CD pipeline stages, published the Docker images to my Docker Hub account, and tested the application deployment."
     </p>
     <div class="signature-row">
       <div>Student Name: Yogesh Kumar Verma</div>
       <div>Roll No: 2400291520288</div>
+      <div>Class / Section: AI - D</div>
       <div>Date: 18-Nov-2026</div>
     </div>
   </div>
