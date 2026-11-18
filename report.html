@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MSE-2 Docker Practical Documentation - Yogesh Kumar Verma</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 16mm 14mm 16mm 14mm;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      line-height: 1.5;
+      font-size: 13px;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      border-bottom: 3px solid #2563eb;
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 22px;
+      color: #0f172a;
+      font-weight: 700;
+    }
+    .header .subtitle {
+      color: #64748b;
+      font-size: 14px;
+      margin-top: 4px;
+    }
+    .badge {
+      background: #dbeafe;
+      color: #1d4ed8;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-weight: 600;
+      font-size: 12px;
+    }
+    .section-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #1e3a8a;
+      border-left: 4px solid #2563eb;
+      padding-left: 8px;
+      margin: 18px 0 10px 0;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 14px;
+      font-size: 12.5px;
+    }
+    th, td {
+      border: 1px solid #cbd5e1;
+      padding: 7px 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f1f5f9;
+      color: #334155;
+      font-weight: 600;
+      width: 32%;
+    }
+    td {
+      background-color: #ffffff;
+    }
+    .status-pass {
+      color: #15803d;
+      font-weight: 600;
+    }
+    .img-container {
+      margin: 12px 0;
+      text-align: center;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #0f172a;
+      padding: 6px;
+    }
+    .img-container img {
+      width: 100%;
+      max-height: 480px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
+    .img-caption {
+      font-size: 11px;
+      color: #94a3b8;
+      margin-top: 6px;
+      text-align: center;
+    }
+    .declaration-box {
+      background-color: #f8fafc;
+      border: 1.5px solid #94a3b8;
+      border-radius: 6px;
+      padding: 12px 14px;
+      margin-top: 18px;
+    }
+    .declaration-text {
+      font-style: italic;
+      color: #334155;
+      margin: 6px 0;
+      line-height: 1.6;
+    }
+    .signature-row {
+      margin-top: 14px;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+      color: #0f172a;
+    }
+    ul {
+      margin: 6px 0 12px 20px;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 3px;
+    }
+    .page-break {
+      page-break-before: always;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div>
+      <h1>MSE-2 Practical Examination Documentation</h1>
+      <div class="subtitle">Software Engineering and DevOps (AI310B) — Morning Shift</div>
+    </div>
+    <div>
+      <span class="badge">STATUS: VERIFIED & PASSED</span>
+    </div>
+  </div>
+
+  <div class="section-title">1. Student Information</div>
+  <table>
+    <tr>
+      <th>Full Name</th>
+      <td><strong>Yogesh Kumar Verma</strong></td>
+    </tr>
+    <tr>
+      <th>University Roll Number</th>
+      <td><strong>2400291520288</strong></td>
+    </tr>
+    <tr>
+      <th>Branch / Class</th>
+      <td>AI (Artificial Intelligence)</td>
+    </tr>
+    <tr>
+      <th>Section</th>
+      <td>D</td>
+    </tr>
+    <tr>
+      <th>GitHub Username</th>
+      <td><code>Yogeshkumarverma761</code></td>
+    </tr>
+  </table>
+
+  <div class="section-title">2. GitHub Submission Details</div>
+  <table>
+    <tr>
+      <th>Forked Repository URL</th>
+      <td><a href="https://github.com/Yogeshkumarverma761/MSE-2-SSED-Morning">https://github.com/Yogeshkumarverma761/MSE-2-SSED-Morning</a></td>
+    </tr>
+    <tr>
+      <th>Branch Used</th>
+      <td><code>main</code></td>
+    </tr>
+    <tr>
+      <th>Latest Commit Hash</th>
+      <td><code>cda51d9</code> — <em>Implement Docker containerization and deployment configurations</em></td>
+    </tr>
+    <tr>
+      <th>Base Repository (PR Target)</th>
+      <td><code>https://github.com/atindeRR/MSE-2-SSED-Morning</code> (main)</td>
+    </tr>
+  </table>
+
+  <div class="section-title">3. Docker Hub Details</div>
+  <table>
+    <tr>
+      <th>Docker Hub Username</th>
+      <td><code>yogeshkumarverma</code></td>
+    </tr>
+    <tr>
+      <th>Frontend Docker Image URL</th>
+      <td><a href="https://hub.docker.com/r/yogeshkumarverma/taskflow-frontend">https://hub.docker.com/r/yogeshkumarverma/taskflow-frontend</a> (Tag: <code>latest</code>)</td>
+    </tr>
+    <tr>
+      <th>Backend Docker Image URL</th>
+      <td><a href="https://hub.docker.com/r/yogeshkumarverma/taskflow-backend">https://hub.docker.com/r/yogeshkumarverma/taskflow-backend</a> (Tag: <code>latest</code>)</td>
+    </tr>
+    <tr>
+      <th>Local Pull & Run Verification</th>
+      <td><span class="status-pass">Passed</span> — <code>docker-compose.deploy.yml</code> successfully deployed without local build</td>
+    </tr>
+  </table>
+
+  <div class="section-title">4. Implementation Checklist</div>
+  <table>
+    <thead>
+      <tr style="background:#f8fafc;">
+        <th style="width:65%;">Task / Requirement</th>
+        <th style="width:35%;">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Task 1: Frontend Dockerfile (Multi-stage build, Nginx proxy, Hadolint 0 errors)</td>
+        <td><span class="status-pass">✔ Completed</span></td>
+      </tr>
+      <tr>
+        <td>Task 1: Backend Dockerfile (Node 20, non-root user 1000:1000, Hadolint 0 errors)</td>
+        <td><span class="status-pass">✔ Completed</span></td>
+      </tr>
+      <tr>
+        <td>Task 2: docker-compose.yml (PostgreSQL, Redis, Backend, Frontend orchestrated)</td>
+        <td><span class="status-pass">✔ Completed</span></td>
+      </tr>
+      <tr>
+        <td>Task 2: PostgreSQL Persistence & Schema (postgres_data named volume + init.sql)</td>
+        <td><span class="status-pass">✔ Completed</span></td>
+      </tr>
+      <tr>
+        <td>Task 3: Docker Hub Publishing (Build, tag, and push images to personal account)</td>
+        <td><span class="status-pass">✔ Completed</span></td>
+      </tr>
+      <tr>
+        <td>Task 4: docker-compose.deploy.yml (Image-based deployment, no build directives)</td>
+        <td><span class="status-pass">✔ Completed</span></td>
+      </tr>
+      <tr>
+        <td>Integration API Tests (12/12 Jest test cases passed)</td>
+        <td><span class="status-pass">✔ 12/12 Passed</span></td>
+      </tr>
+      <tr>
+        <td>GitHub Actions CI/CD Pipeline Execution</td>
+        <td><span class="status-pass">✔ Passed (1m 15s)</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="page-break"></div>
+
+  <div class="section-title">5. CI/CD Execution Evidence (GitHub Actions)</div>
+  <p>The automated Continuous Delivery workflow (<code>cd.yml</code>) executed successfully on the <code>main</code> branch with all stages passing cleanly.</p>
+  <table>
+    <tr>
+      <th>Workflow Name</th>
+      <td>Docker Practical - Publish and Verify</td>
+    </tr>
+    <tr>
+      <th>Workflow Run URL</th>
+      <td><a href="https://github.com/Yogeshkumarverma761/MSE-2-SSED-Morning/actions/runs/44247382605">https://github.com/Yogeshkumarverma761/MSE-2-SSED-Morning/actions/runs/44247382605</a></td>
+    </tr>
+    <tr>
+      <th>Workflow Job URL</th>
+      <td><a href="https://github.com/Yogeshkumarverma761/MSE-2-SSED-Morning/actions/runs/44247382605/job/134609521798">https://github.com/Yogeshkumarverma761/MSE-2-SSED-Morning/actions/runs/44247382605/job/134609521798</a></td>
+    </tr>
+    <tr>
+      <th>Execution Duration & Result</th>
+      <td><strong>1m 15s &mdash; SUCCESS</strong></td>
+    </tr>
+  </table>
+
+  <div class="img-container">
+    <img src="cicd_screenshot.png" alt="GitHub Actions CD Execution Evidence">
+    <div class="img-caption">Figure 1: GitHub Actions CI/CD pipeline execution evidence showing all stages completed successfully.</div>
+  </div>
+
+  <div class="section-title">6. Integration Test Results (12/12 Passed)</div>
+  <table>
+    <thead>
+      <tr style="background:#f8fafc;">
+        <th>Test Case</th>
+        <th>Description</th>
+        <th>Result</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TC01</td>
+        <td>Health endpoint confirms API, PostgreSQL and Redis connectivity</td>
+        <td><span class="status-pass">PASS</span></td>
+      </tr>
+      <tr>
+        <td>TC02 - TC04</td>
+        <td>User registration, rejection of duplicate emails, authentication & JWT token issuance</td>
+        <td><span class="status-pass">PASS</span></td>
+      </tr>
+      <tr>
+        <td>TC05 - TC08</td>
+        <td>Task creation, authorization guards, listing tasks & Redis cache population</td>
+        <td><span class="status-pass">PASS</span></td>
+      </tr>
+      <tr>
+        <td>TC09 - TC12</td>
+        <td>Task status updates, cache invalidation, invalid status rejection, deletion & verification</td>
+        <td><span class="status-pass">PASS</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="declaration-box">
+    <div style="font-weight: 700; color: #0f172a; margin-bottom: 4px;">7. Mandatory Declaration</div>
+    <p class="declaration-text">
+      "I hereby declare that the submitted Docker implementation is my own work. I have successfully executed and verified the required CI/CD pipeline stages, published the Docker images to my Docker Hub account, and tested the application deployment."
+    </p>
+    <div class="signature-row">
+      <div>Student Name: Yogesh Kumar Verma</div>
+      <div>Roll No: 2400291520288</div>
+      <div>Date: 18-Nov-2026</div>
+    </div>
+  </div>
+
+</body>
+</html>
